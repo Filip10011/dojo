@@ -18,14 +18,19 @@ const Home = () => {
     {
       title: "Web dev tools",
       body: "Est commodo irure dolore voluptate ullamco culpa pariatur. Dolore ullamco eiusmod in do sunt labore qui anim officia voluptate duis. Labore sint cillum ad non fugiat mollit occaecat ea commodo. In eiusmod tempor proident amet cillum dolor commodo sunt laborum reprehenderit laborum. Occaecat excepteur ut voluptate irure ad. Nostrud exercitation duis laboris aliqua consectetur minim et. Cupidatat elit fugiat fugiat id aliquip.",
-      author: "Luigi",
+      author: "Filip",
       id: 3,
     },
   ]);
 
+  const handleDelete = (id) => {
+    const newBlogs = blogs.filter((blog) => blog.id != id);
+    setBlogs(newBlogs);
+  };
+
   return (
     <div className="home">
-      <BlogList blogs={blogs} />
+      <BlogList blogs={blogs} title="All blogs!" handleDelete={handleDelete} />
     </div>
   );
 };
