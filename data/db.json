@@ -1,16 +1,34 @@
 {
-    "blogs":[
-      {
-        "title":"My First Blog",
-        "body":"Why do we use it?\nIt is a long established fact that a reader will be distracted ",
-        "author":"filip",
-        "id":1
-      },
-      {
-        "title":"Opening Party",
-        "body":"Why do we use it?\nIt is a long established fact that a reader will be distracted ",
-        "author":"andrej",
-        "id":2
-      }
-    ]
-  }
+  "blogs": [
+    {
+      "title": "My First Blog",
+      "body": "Why do we use it?\nIt is a long established fact that a reader will be distracted ",
+      "author": "filip",
+      "id": 1
+    },
+    {
+      "title": "Opening Party",
+      "body": "Why do we use it?\nIt is a long established fact that a reader will be distracted ",
+      "author": "andrej",
+      "id": 2
+    },
+    {
+      "title": "MKD-BLG",
+      "body": "Dali MKD ke tepa so bg?",
+      "author": "Filip",
+      "id": 3
+    },
+    {
+      "title": "Filip",
+      "body": "Porsche 911 GT3 Touring",
+      "author": "Filip",
+      "id": 4
+    },
+    {
+      "title": "Jandrej",
+      "body": "Ke odi braksnelot za Budvi",
+      "author": "Andrej",
+      "id": 5
+    }
+  ]
+}
