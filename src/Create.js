@@ -1,10 +1,12 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Create = () => {
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
   const [author, setAuthor] = useState("Filip");
   const [isPending, setIsPending] = useState(false);
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -17,7 +19,8 @@ const Create = () => {
       body: JSON.stringify(blog),
     }).then(() => {
       setIsPending(false);
-      alert("Blog created successfully");
+      console.log("Blog created successfully");
+      navigate(-1);
     });
   };
   return (
